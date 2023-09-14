@@ -120,7 +120,7 @@
     <ul id="task">
         <li>Hit the Library<button id="cross" type="button" title="Remove Task"></button></li>
     </ul>
-<script type="module">
+<script>
     var input = document.getElementById("data");
     input.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
@@ -167,11 +167,11 @@
         }
         document.getElementById("data").value = "";
 
-        var btn = document.createElement("BUTTON");
-        var txt = document.createTextNode("\u00D7");
-        btn.className = "close";
-        btn.appendChild(txt);
-        li.appendChild(btn);
+        var btn2 = document.createElement("BUTTON");
+        var txt2 = document.createTextNode("\u00D7");
+        btn2.className = "close";
+        btn2.appendChild(txt2);
+        li.appendChild(btn2);
 
         for (i = 0; i < close.length; i++) {
         close[i].onclick = function() {
